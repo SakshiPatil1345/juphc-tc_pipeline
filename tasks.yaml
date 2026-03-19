@@ -44,7 +44,7 @@ spec:
   steps:
     - name: npminstall
       image: node:20-buster-slim
-      workingDir: $(workspaces.source.path)
+      workingDir: $(workspaces.source.path)/zntwk-tax_calculator
       script: |
         #!/bin/bash
         set -e
@@ -70,7 +70,7 @@ spec:
   steps:
     - name: jasminetests
       image: node:20-buster-slim
-      workingDir: $(workspaces.source.path)
+      workingDir: $(workspaces.source.path)/zntwk-tax_calculator
       script: |
         #!/bin/bash
         set -e
